@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calcular temperatura</title>
+</head>
+<body>
+  <input type"number" id="temp" placeholder="Ingrese su temperatura">
+  <br>
+  <br>
+  <button onclick="convertF()"> convertir a farentheit </button>
+  <br>
+  <br>
+  <button onclick="convertC()"> convertir a celcius</button>
+  <br>
+  <br>
+  <p id="result"></p>
+  <script>
+  function convertF(){
+    var x = document.getElementById("temp").value;
+    var f= (x*(9/5)) + 32;
+    document.getElementById("result").innerHTML=f;
+  }
+  function convertC(){
+    var x = document.getElementById("temp").value;
+    var c= (x-32)*(5/9);
+    document.getElementById("result").innerHTML=c;
+  }
+  </script>
+</body>
+</html>
